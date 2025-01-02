@@ -33,7 +33,9 @@ ________________________________________
 3. Data Assessment and Formatting
 Initial Data Review
 The dataset was loaded using Python’s Pandas library to inspect its structure and identify missing or inconsistent values:
- 
+
+ ![image](https://github.com/user-attachments/assets/73cb820e-ca59-401f-824e-61e80dc32f69)
+
 Handling Missing Values
 •	Age: Missing values were imputed using the median age of passengers. 
 •	train_data['Age'].fillna(train_data['Age'].median(), inplace=True)
@@ -43,11 +45,14 @@ Handling Missing Values
 Encoding Categorical Variables
 Categorical variables like Sex and Embarked were converted into numerical values using categorical encoding:
  
+![image](https://github.com/user-attachments/assets/c9b93e0b-c3e9-4b83-8f1f-13b7850baa3a)
 
 4. Data Preparation for Modeling
 Splitting the Data
 The dataset was split into features (X) and target (y), and further divided into training and validation subsets:
- 
+
+ ![image](https://github.com/user-attachments/assets/6308d37f-915b-4a68-bcd7-0e3666fef841)
+
 6. Model Building and Evaluation
 Model Training
 A logistic regression model was trained using Scikit-learn:
@@ -57,7 +62,9 @@ model = LogisticRegression()
 model.fit(X_train, y_train)
 Model Evaluation
 Performance was evaluated using accuracy, a confusion matrix, and classification report:
- 
+
+ ![image](https://github.com/user-attachments/assets/b40a5d8b-1b83-4b0a-bd16-4421c7bb1510)
+
 Recommendations:
 •	In future scenarios, prioritize resources for vulnerable groups like women and children during emergencies.
 •	Improve safety measures in third-class areas to increase survival rates for economically disadvantaged passengers.
